@@ -1,0 +1,10 @@
+package MultiThreading;
+
+public class UsingStaticSynchronization {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

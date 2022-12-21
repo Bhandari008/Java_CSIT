@@ -1,0 +1,24 @@
+package MultiThreading;
+
+
+class Hi{
+	
+}
+
+class Hello{
+	
+}
+
+public class UsingMultiThreading {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
+
+
+// Thread class
+// Java lang
+// Runnable interface

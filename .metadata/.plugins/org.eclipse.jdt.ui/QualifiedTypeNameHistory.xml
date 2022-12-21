@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="PackageOne.ProtectionLevel"/>
+    <fullyQualifiedTypeName name="PackageTwo.DifferentPackageNonSubClass"/>
+    <fullyQualifiedTypeName name="InnerClass.ConceptOfInnerClass"/>
+    <fullyQualifiedTypeName name="InnerClass.Anonymous"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="MultiThreading.StaticSynchronization"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+    <fullyQualifiedTypeName name="MultiThreading.WaitandNotify"/>
+</qualifiedTypeNameHistroy>

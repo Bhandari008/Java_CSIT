@@ -1,0 +1,26 @@
+package MultiThreading;
+
+
+class CSIT_Booking_System{
+	int csit_seats = 48;
+	public void book(int seats) {
+		if(csit_seats >=seats) {
+			System.out.println(seats + " booked success");
+			csit_seats = csit_seats - seats;
+			System.out.println("Remaining Seats = " + csit_seats);
+		}
+		else {
+			System.out.println("Seats are not available.");
+			System.out.println("Only "+ csit_seats + " are avaialble.");
+		}
+	}
+}
+
+public class WithoutSynchronization {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
