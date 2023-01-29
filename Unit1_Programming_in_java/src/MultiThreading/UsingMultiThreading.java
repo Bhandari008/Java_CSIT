@@ -6,7 +6,9 @@ class Hi extends Thread {
 		for (int i = 0; i < 10; i++) {
 			try {
 				Thread.sleep(1000);
-			} catch (InterruptedException ex) {
+			} 
+			catch (InterruptedException ex) {
+				
 			}
 			System.out.println("Hi");
 		}

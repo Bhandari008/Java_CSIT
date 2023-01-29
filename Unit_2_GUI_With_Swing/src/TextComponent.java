@@ -1,4 +1,5 @@
 import java.awt.FlowLayout;
+import java.awt.GridLayout;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -8,13 +9,12 @@ import javax.swing.JPasswordField;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
+import javax.swing.SwingConstants;
 
 public class TextComponent extends JFrame {
 	JLabel label, ilabel, plabel;
 	JTextField txt;
 	JTextArea area;
-	
-	
 	JPasswordField pwd;
 	JScrollPane pane;
 	
@@ -22,7 +22,7 @@ public class TextComponent extends JFrame {
 	public TextComponent() {
 		// TODO Auto-generated constructor stub
 		
-		setLayout(new FlowLayout(FlowLayout.RIGHT, 10, 30));
+		setLayout(new GridLayout());
 		
 		label = new JLabel();
 		label.setText("Username");
@@ -32,10 +32,9 @@ public class TextComponent extends JFrame {
 		
 		plabel = new JLabel();
 		plabel.setText("Password");
-	
 		
 		txt = new JTextField();
-		area = new JTextArea(20, 400);
+		area = new JTextArea(8, 40);
 		pane = new JScrollPane(area);
 		pwd = new JPasswordField();
 		

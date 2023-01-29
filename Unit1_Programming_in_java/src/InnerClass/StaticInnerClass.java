@@ -11,8 +11,9 @@ public class StaticInnerClass {
 		}
 	}
 	public static void main(String[] args) {
-		StaticInnerClass oc = new StaticInnerClass();
-		//ConceptOfInnerClass.Inner ic = oc.new Inner();
+//		StaticInnerClass oc = new StaticInnerClass();
+		Inner ic =  new StaticInnerClass.Inner();
+		ic.access();
 //		oc.access();
 
 	}

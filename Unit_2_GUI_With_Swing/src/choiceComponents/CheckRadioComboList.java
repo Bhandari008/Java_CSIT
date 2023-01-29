@@ -57,9 +57,7 @@ public class CheckRadioComboList extends JFrame {
 			@Override
 			public void itemStateChanged(ItemEvent e) {
 				String item = cb.getSelectedItem().toString();
-				printlbl.setText(item);
-				
-				
+				printlbl.setText(item);		
 			}
 		});
 		

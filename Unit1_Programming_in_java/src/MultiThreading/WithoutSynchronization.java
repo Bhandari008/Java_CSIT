@@ -21,12 +21,11 @@ public class WithoutSynchronization extends Thread {
 	CSIT_Booking_System cbs = new CSIT_Booking_System();
 	int seats;
 	@Override
-	 public  void run() {
+	 public void run() {
 		cbs.book(seats);
 	}
 	
 	public static void main(String[] args) {
-		
 		
 		
 		WithoutSynchronization t1 = new WithoutSynchronization();
@@ -37,7 +36,6 @@ public class WithoutSynchronization extends Thread {
 		WithoutSynchronization t2 = new WithoutSynchronization();
 		t2.seats = 13;
 		t2.start();
-		
 		
 	}
 

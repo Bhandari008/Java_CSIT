@@ -8,6 +8,7 @@ import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JRadioButtonMenuItem;
 import javax.swing.KeyStroke;
 
 
@@ -17,6 +18,7 @@ public class MenuExample extends JFrame {
 	JMenu file, edit, view;
 	JMenuItem save, open, exit, paste, copy;
 	JCheckBoxMenuItem status;
+	JRadioButtonMenuItem r1;
 	
 	public MenuExample() {
 		
@@ -54,9 +56,7 @@ public class MenuExample extends JFrame {
 		paste = new JMenuItem("paste");
 		
 		status = new JCheckBoxMenuItem("Status");
-		
-		
-		
+		r1 = new JRadioButtonMenuItem("Radio");
 		
 		// adding menu
 		bar.add(file);
@@ -71,21 +71,18 @@ public class MenuExample extends JFrame {
 		
 		// adding view items
 		view.add(status);
+		view.add(r1);
 		
 		// adding edit items
 		edit.add(copy);
 		edit.add(paste);
-		
+	
 		setJMenuBar(bar);
 		
 		setVisible(true);
 	}
-	
-	
-	
 	public static void main(String[] args) {
 		new MenuExample();
-
+		
 	}
-
 }

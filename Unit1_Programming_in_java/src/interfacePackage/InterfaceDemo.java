@@ -28,6 +28,7 @@ public class InterfaceDemo extends A implements FirstInterface, SecondInterface 
 		// TODO Auto-generated method stub
 		// FirstInterface fi = new FirstInterface();
 		// x = 30;
+		
 		System.out.println("Value of x = " + FirstInterface.x);
 	}
 
