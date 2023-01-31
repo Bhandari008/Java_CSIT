@@ -54,7 +54,6 @@ public class FactorialImplementation extends JFrame {
 	}
 	
 	
-	
 	// Factorial Function
 	public static int factorial(int x)
 	{
