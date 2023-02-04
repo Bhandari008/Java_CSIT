@@ -13,10 +13,11 @@ public class Insert {
 		con = new SimpleDatabase().getConnection();
 		statement = con.createStatement();
 		
-		String insert = "INSERT INTO College_tn1 VALUES (1, 'NEW SUMMIT)";
+		String insert = "INSERT INTO College_tn1 VALUES(2, 'CAB')";
 		
 		
 		statement.executeUpdate(insert); // creates a table in db
+		
 		
 		System.out.println("Insert Data");
 		
@@ -24,18 +25,15 @@ public class Insert {
 		
 		set = statement.executeQuery("SELECT * FROM College_tn1");
 		while(set.next()) {
-			System.out.println("College Id"+ set.getInt(0));
+			System.out.println("College Id: "+ set.getInt("id"));
 			
-			System.out.println("College Name"+ set.getString(1));
+			System.out.println("College Name: "+ set.getString("CollegeName"));
 			
 		}
-		
-		
-		
-		
+			
 	}
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		new Insert();
 
 	}
 

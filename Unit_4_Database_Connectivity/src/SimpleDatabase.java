@@ -6,11 +6,14 @@ public class SimpleDatabase {
 	Connection con;
 
 	public SimpleDatabase() throws ClassNotFoundException, SQLException {
+		
+		System.out.println("Starting");
 		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-		String database = "NCS_CSIT_2075_DB";
+		String database = "NSC_CSIT_2075_DB";
 		int port = 1433;
-		String server = "//DESKTOP-6C86VFI\\";
-		String connectionString = "jdbc:sqlserver:"+server+":"+port+";databaseName="+ database+";integratedSecurity=true";
+		String server = "//DESKTOP-6C86VFI";
+		String connectionString = "jdbc:sqlserver:"+server+":"+port+";databaseName="+ database+";integratedSecurity=true;"+
+			     "encrypt=true;trustServerCertificate=true";
 		
 		
 		con = DriverManager.getConnection(connectionString);
